@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const loginroutes = require('./routes/login');
+const userroutes = require('./routes/user');
 const mongoose = require('mongoose');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 const app = express();
